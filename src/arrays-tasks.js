@@ -639,8 +639,6 @@ function sortDigitNamesByNumericOrder(arr) {
 function swapHeadAndTail(arr) {
   if (arr.length <= 1) return arr;
   const n = Math.floor(arr.length / 2);
-  console.log(arr.length);
-
   return arr.length % 2 === 0
     ? arr.slice(-n).concat(arr.slice(0, n))
     : arr
